@@ -1,0 +1,61 @@
+-- select 
+--     e.emp_id,
+--     e.emp_name,
+--     d.dept_id,
+--     d.dept_name
+-- from employee e
+--     join department d
+--     -- on e.dept_id = d.dept_id;
+--     using (dept_id)
+-- select
+--     department.dept_id,
+--     department.dept_name,
+--     department.loc,
+--     department.mgr_id,
+--     employee.emp_id,
+--     employee.dept_id,
+--     employee.emp_name
+-- from department
+--     join employee
+--     on department.mgr_id = employee.emp_id
+-- ;
+-- select
+--     d.dept_id,
+--     d.dept_name,
+--     count(*),
+--     sum(sal),
+--     avg(sal),
+--     min(sal),
+--     max(sal)
+-- from employee e
+--     join department d
+--     on e.dept_id = d.dept_id 
+-- group by d.dept_id
+-- order by d.dept_id
+-- ;
+-- select * from employee cross join department;
+-- select
+--     e.emp_id,
+--     e.emp_name,
+--     d.dept_id,
+--     d.dept_name
+-- from employee e
+--     right join department d
+--     on e.dept_id = d.dept_id
+-- ;
+-- select 'customer' as table, count(*) from customer
+-- union
+-- select 'employee' as table, count(*) from employee
+-- union
+-- select 'department' as table, count(*) from department
+-- union
+-- select 'product' as table, count(*) from product
+-- union
+-- select 'packedsales' as table, count(*) from packedsales
+-- union
+-- select 'sales' as table, count(*) from sales
+-- ;
+-- select * from department
+-- except
+-- select * from department where adept_id = 40;
+-- select * from department where adept_id <> 40;
